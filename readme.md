@@ -10,6 +10,12 @@ answer : var is function-scoped and hoisted, let is block-scoped and reassignabl
 Q2:what is event loop in one line 
 Answer :The event loop is what lets JavaScript handle asynchronous code by running queued tasks when the main code finishes, without blocking execution.
 
+Q3:what is promise in js in one line
+answer: A Promise is an object that represents the completion or failure of an asynchronous operation.
+
+Q4: Hoisting
+answer: JavaScript is when variable and function declarations are moved to the top of their scope before code execution.
+
 # type of all the variable 
 typeof undefined // "undefined"
 
