@@ -59,7 +59,9 @@ user.sayHi(); // Ilya
 
 # event loop 
 
-1 parts 
+
+[parts of vent lopps]
+
   ![alt text](image.png)
 
   Call Stack ← Event Loop ← Queues
