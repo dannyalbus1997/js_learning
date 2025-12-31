@@ -7,6 +7,8 @@ console.log(y); // answer is 5
 Q:1 difference b/w let var and const 
 answer : var is function-scoped and hoisted, let is block-scoped and reassignable, and const is block-scoped and cannot be reassigned.
 
+Q2:what is event loop in one line 
+Answer :The event loop is what lets JavaScript handle asynchronous code by running queued tasks when the main code finishes, without blocking execution.
 
 # type of all the variable 
 typeof undefined // "undefined"
@@ -26,3 +28,58 @@ typeof Math // "object"  (1)
 typeof null // "object"  (2)
 
 typeof alert // "function"  (3)
+
+# Maths operations 
+1 Addition +,
+2 Subtraction -,
+3 Multiplication *,
+4 Division /,
+5 Remainder %,
+6 Exponentiation **
+
+# objects this 
+
+examples
+
+
+let user = {
+  firstName: "Ilya",
+  sayHi() {
+    let arrow = () => alert(this.firstName);
+    arrow();
+  }
+};
+
+user.sayHi(); // Ilya
+
+1: When a function is declared, it may use this, but that this has no value until the function is called.
+2: A function can be copied between objects.
+3: hen a function is called in the “method” syntax: object.method(), the value of this during the call is object.
+
+
+# event loop 
+
+1 parts 
+  ![alt text](image.png)
+
+  Call Stack ← Event Loop ← Queues
+
+
+console.log("Start");
+
+setTimeout(() => {
+  console.log("Timeout");
+}, 0);
+
+Promise.resolve().then(() => {
+  console.log("Promise");
+});
+
+console.log("End");
+
+Answers 
+
+Start
+End
+Promise
+Timeout
