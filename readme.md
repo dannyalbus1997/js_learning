@@ -175,7 +175,7 @@ function outer() {
 # Coercion
 
 JavaScript automatically converts a value from one type to another when needed.
-
+```
 '5' + 2      // '52'  (number → string)
 '5' - 2      // 3     (string → number)
 true + 1     // 2
@@ -191,26 +191,25 @@ Boolean(0)    // false
 {} + []       // 0   (in browser console)
 '5' == 5      // true
 '5' === 5     // false
-
+```
 
 # This 
 this is a reference to the object that is currently executing the code. Its value depends on how the function is called, not where it’s defined.
 
  
 ### 2. Global Context
-
+```
 Browser (non-strict mode)
 
 console.log(this); // window
 
-
 Node.js (global context)
 
 console.log(this); // {} (empty object in module scope)
-
+```
 
 ### 3. Function Context
-
+```
 function show() {
   console.log(this);
 }
@@ -252,3 +251,4 @@ const obj = {
   }
 };
 obj.greet(); // Talha
+```
