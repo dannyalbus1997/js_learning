@@ -26,7 +26,7 @@ Q7 : Closure
 answer: A closure is when a function remembers and can access variables from its outer scope even after the outer function has finished.
 
 example :
- 
+
 function counter() {
   let count = 0;
 
@@ -142,3 +142,23 @@ function outer() {
     console.log(x);
   }
 }
+
+# Coercion
+
+JavaScript automatically converts a value from one type to another when needed.
+
+'5' + 2      // '52'  (number → string)
+'5' - 2      // 3     (string → number)
+true + 1     // 2
+false == 0   // true
+null == undefined // true
+
+Number('5')   // 5
+String(10)    // '10'
+Boolean(0)    // false
+
+[] + []       // ''
+[] + {}       // '[object Object]'
+{} + []       // 0   (in browser console)
+'5' == 5      // true
+'5' === 5     // false
