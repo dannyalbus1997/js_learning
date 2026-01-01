@@ -162,3 +162,64 @@ Boolean(0)    // false
 {} + []       // 0   (in browser console)
 '5' == 5      // true
 '5' === 5     // false
+
+
+# This 
+this is a reference to the object that is currently executing the code. Its value depends on how the function is called, not where it’s defined.
+
+
+2. Global Context
+
+Browser (non-strict mode)
+
+console.log(this); // window
+
+
+Node.js (global context)
+
+console.log(this); // {} (empty object in module scope)
+
+
+3. Function Context
+
+function show() {
+  console.log(this);
+}
+show(); // window (browser) or undefined (strict mode)
+
+
+"use strict";
+function show() {
+  console.log(this);
+}
+show(); // undefined
+
+4. Object Method
+
+const obj = {
+  name: "Talha",
+  greet: function () {
+    console.log(this.name);
+  }
+};
+obj.greet(); // Talha
+
+
+5. Arrow Functions
+const obj = {
+  name: "Talha",
+  greet: () => {
+    console.log(this.name);
+  }
+};
+obj.greet(); // undefined (because this points to global/window)
+
+✅ Correct usage inside object:
+const obj = {
+  name: "Talha",
+  greet() {
+    const arrow = () => console.log(this.name);
+    arrow();
+  }
+};
+obj.greet(); // Talha
