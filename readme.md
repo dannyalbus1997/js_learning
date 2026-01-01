@@ -196,8 +196,8 @@ Boolean(0)    // false
 # This 
 this is a reference to the object that is currently executing the code. Its value depends on how the function is called, not where it’s defined.
 
-
-2. Global Context
+ 
+### 2. Global Context
 
 Browser (non-strict mode)
 
@@ -209,7 +209,7 @@ Node.js (global context)
 console.log(this); // {} (empty object in module scope)
 
 
-3. Function Context
+### 3. Function Context
 
 function show() {
   console.log(this);
@@ -234,7 +234,7 @@ const obj = {
 obj.greet(); // Talha
 
 
-5. Arrow Functions
+### 5. Arrow Functions
 const obj = {
   name: "Talha",
   greet: () => {
