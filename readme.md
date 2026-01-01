@@ -16,6 +16,31 @@ answer: A Promise is an object that represents the completion or failure of an a
 Q4: Hoisting
 answer: JavaScript is when variable and function declarations are moved to the top of their scope before code execution.
 
+Q5: Debounce
+answer: Debounce delays a function call and runs it only after the user stops triggering the event for a given time (useful for search input, resize, scroll).
+
+Q6: Throttle
+answer:Throttle limits a function so it runs at most once in a given time interval, no matter how many times the event fires (useful for scroll, resize, button spam).
+
+Q7 : Closure
+answer: A closure is when a function remembers and can access variables from its outer scope even after the outer function has finished.
+
+expample 
+function counter() {
+  let count = 0;
+
+  return function () {
+    count++;
+    return count;
+  };
+}
+
+const inc = counter();
+inc(); // 1
+inc(); // 2
+
+
+
 # type of all the variable 
 typeof undefined // "undefined"
 
@@ -91,3 +116,28 @@ Start
 End
 Promise
 Timeout
+
+# scope in js
+
+Scopes in JavaScript (simple):
+
+1: Global Scope
+Accessible everywhere.
+
+2: Function Scope
+Variables inside a function are accessible only inside it (var, let, const).
+ 
+3: Block Scope
+let and const work only inside {}.
+
+4: Lexical Scope
+Inner functions can access variables of outer functions.
+
+example
+
+function outer() {
+  let x = 5;
+  function inner() {
+    console.log(x);
+  }
+}
