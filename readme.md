@@ -40,7 +40,35 @@ const inc = counter();
 inc(); // 1
 inc(); // 2
 
+Q8: Explain the difference between synchronous and asynchronous code in JavaScript, with an example.
+ans: 
+Synchronous code runs line by line, blocking further execution until the current line finishes.
+console.log("First");
+console.log("Second");
+First
+Second
 
+Asynchronous code allows other code to run without waiting for it to finish. It often uses Promises or callbacks.
+console.log("First");
+setTimeout(() => console.log("Second"), 1000);
+console.log("Third");
+
+First
+Third
+Second
+
+
+Q9: What is event bubbling in JavaScript?
+ans: Event bubbling in JavaScript is a type of event propagation where an event starts from the innermost element (child) and bubbles up to its parent elements in the DOM tree.
+
+Q10 :What is the purpose of the bind method in JavaScript?
+ans: The bind method in JavaScript is used to set the this context of a function and return a new function with that context permanently attached.
+
+Q:11:What is currying in JavaScript, and why would you use it?
+ans :Currying is transforming a function with multiple arguments into a sequence of functions, each taking a single argument. The ()=>()=> syntax is one way to implement it.
+
+Q:12 coercion
+ans automatically converts a value from one type to another during operations.
 
 # type of all the variable 
 typeof undefined // "undefined"
