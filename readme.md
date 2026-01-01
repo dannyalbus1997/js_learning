@@ -221,9 +221,9 @@ function show() {
   console.log(this);
 }
 show(); // undefined
-
-4. Object Method
-
+```
+### 4. Object Method
+```
 const obj = {
   name: "Talha",
   greet: function () {
@@ -231,9 +231,10 @@ const obj = {
   }
 };
 obj.greet(); // Talha
-
+```
 
 ### 5. Arrow Functions
+```
 const obj = {
   name: "Talha",
   greet: () => {
