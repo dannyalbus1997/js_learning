@@ -25,8 +25,7 @@ answer:Throttle limits a function so it runs at most once in a given time interv
 Q7 : Closure
 answer: A closure is when a function remembers and can access variables from its outer scope even after the outer function has finished.
 
-example :
-
+```bash
 function counter() {
   let count = 0;
 
@@ -35,10 +34,12 @@ function counter() {
     return count;
   };
 }
-
 const inc = counter();
 inc(); // 1
 inc(); // 2
+```
+
+
 
 Q8: Explain the difference between synchronous and asynchronous code in JavaScript, with an example.
 ans: 
