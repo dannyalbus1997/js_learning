@@ -4,25 +4,25 @@ if (true) {
 }
 console.log(y); // answer is 5 
 # js questions and there answer 
-Q:1 difference b/w let var and const 
+## Q:1 difference b/w let var and const 
 answer : var is function-scoped and hoisted, let is block-scoped and reassignable, and const is block-scoped and cannot be reassigned.
 
-Q2:what is event loop in one line 
+## Q2:what is event loop in one line 
 Answer :The event loop is what lets JavaScript handle asynchronous code by running queued tasks when the main code finishes, without blocking execution.
 
-Q3:what is promise in js in one line
+## Q3:what is promise in js in one line
 answer: A Promise is an object that represents the completion or failure of an asynchronous operation.
 
-Q4: Hoisting
+## Q4: Hoisting
 answer: JavaScript is when variable and function declarations are moved to the top of their scope before code execution.
 
-Q5: Debounce
+## Q5: Debounce
 answer: Debounce delays a function call and runs it only after the user stops triggering the event for a given time (useful for search input, resize, scroll).
 
-Q6: Throttle
+## Q6: Throttle
 answer:Throttle limits a function so it runs at most once in a given time interval, no matter how many times the event fires (useful for scroll, resize, button spam).
 
-Q7 : Closure
+## Q7 : Closure
 answer: A closure is when a function remembers and can access variables from its outer scope even after the outer function has finished.
 
 ```bash
@@ -41,7 +41,7 @@ inc(); // 2
 
 
 
-Q8: Explain the difference between synchronous and asynchronous code in JavaScript, with an example.
+## Q8: Explain the difference between synchronous and asynchronous code in JavaScript, with an example.
 ans: 
 Synchronous code runs line by line, blocking further execution until the current line finishes.
 console.log("First");
@@ -58,17 +58,17 @@ First
 Third
 Second
 
-
-Q9: What is event bubbling in JavaScript?
+ 
+## Q9: What is event bubbling in JavaScript?
 ans: Event bubbling in JavaScript is a type of event propagation where an event starts from the innermost element (child) and bubbles up to its parent elements in the DOM tree.
 
-Q10 :What is the purpose of the bind method in JavaScript?
+## Q10 :What is the purpose of the bind method in JavaScript?
 ans: The bind method in JavaScript is used to set the this context of a function and return a new function with that context permanently attached.
 
-Q:11:What is currying in JavaScript, and why would you use it?
+## Q:11:What is currying in JavaScript, and why would you use it?
 ans :Currying is transforming a function with multiple arguments into a sequence of functions, each taking a single argument. The ()=>()=> syntax is one way to implement it.
 
-Q:12 coercion
+## Q:12 coercion
 ans automatically converts a value from one type to another during operations.
 
 # type of all the variable 
