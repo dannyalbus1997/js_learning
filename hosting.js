@@ -31,3 +31,4 @@ function findthedenomination(input) {
 }
 
 console.log(atmFunc(25000));
+

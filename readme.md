@@ -253,3 +253,32 @@ const obj = {
 };
 obj.greet(); // Talha
 ```
+
+# Truthy / Falsy
+
+### Falsy Values
+
+```
+false
+0
+-0
+0n
+""
+null
+undefined
+NaN
+
+```
+
+### Truthy Values
+
+```
+true
+"0"
+"false"
+[]
+{}
+function () {}
+42
+
+```
