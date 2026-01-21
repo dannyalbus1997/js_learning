@@ -285,5 +285,25 @@ function () {}
 
 # data types
 Primitive data types store simple values, while non-primitive data types store references to complex values.
+## Immutable (cannot be changed)
+```
+let a = 10;
+a = 20;        // creates a new value, original not changed
+
+let str = "hi";
+str[0] = "H";  // no effect
+console.log(str); // "hi"
+
+```
+## Mutable (can be changed)
+```
+let obj = { name: "Talha" };
+obj.name = "Ali";   // value changed
+
+let arr = [1, 2];
+arr.push(3);       // array modified
+
+```
 ## difference b/w mutable and immutable
 Mutable means a value can be changed, while immutable means a value cannot be changed once created.
+
