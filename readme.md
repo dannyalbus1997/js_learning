@@ -282,3 +282,8 @@ function () {}
 42
 
 ```
+
+# data types
+Primitive data types store simple values, while non-primitive data types store references to complex values.
+## difference b/w mutable and immutable
+Mutable means a value can be changed, while immutable means a value cannot be changed once created.
